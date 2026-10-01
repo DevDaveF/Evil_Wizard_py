@@ -1,37 +1,6 @@
 import os # used for clearing the terminal screen so can have more of an app feel
 import subprocess # used as part of clearing the terminal screen
-import random
-
-# Completed - feels like viewing stats should not lose you a turn need to read specs
-# Completed - Add healing mechanic that does not go over max health
-# Completed - Health regenertion below 15 saying they had 0 health regen which is false...
-# Completed - Prevent player from heal action if fully healed and cycle back to turn without triggering wizard attack
-# Completed - Dark wizard health can go over max, check is this against requirements?
-# Completed - Added a victory message for the player.
-# Completed - How pass special attribute through parent class? Need to create a special ability method in parent that takes child class abilities. Would that use super()?
-# Completed - Make Paladin divine shield
-# add type commentary through code
-# refactor code once counting where use same code multiple times turn into function
-# Completed - Ways to do this - wizard attack power 0 until end of turn
-# Completed - change control flow for wiard if so if divine shield active flips a bool which flips at end of turn
-# Outstanding - Need to add clear text so game looks cleaner on terminal and maybe display permanent stats at top? Check spec
-# Completed - Have defeated message and try again? Create printed skull with #'s or lines?
-# Completed - Make attack messages specific for class i.e. spells or weapons? check spec - I learned about this in OOP it is one of the principles which one?
-# Completed - add two special abilities to each character
-# Completed - need to randomize the attack damage by all characters within a range of that characters base attack power
-# Completed - issue with player health becoming giant float #
-# Completed - need to make sure heal implements
-# Completed - Not needed Need to add cooldown mechanic for two special abilities tracked through game. Perhaps counter in loop that resets
-# Completed - fix up some screen clearing at load of game and in navigation
-# Completed - get special ability activating
-# Completed - keep attack power evil wizard going below zero on enfeeblement?
-# Outstanding - message on health at max did not happen randomly for mage?
-# Completed - dark wizard should heal when doing attacks for special abilities of heros i.e paladin divine shield
-
-# Completed - Add try except and while loop to 3 other classes for special attributes
-# Outstanding - Refactor while try except as a function rather than have all the code retyped multiple times :)
-# Make character icon that goes over their turn menu for their chosen character type
-# add animation for each special ability
+import random # used to generate random #'s for attack output variability
 
 # Base Character class
 class Character:
