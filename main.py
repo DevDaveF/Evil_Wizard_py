@@ -481,7 +481,7 @@ SS    ;,. SS    ;,. SS       SS    ;,. SS    ;,.    ;,.           ;,.    SS    ;
         return Paladin(name,0), class_choice
     else:
         print("Invalid choice. Defaulting to Warrior.")
-        return Warrior(name)
+        return Warrior(name), class_choice
 
 def battle(player, wizard, class_choice):
     while wizard.health > 0 and player.health > 0:
